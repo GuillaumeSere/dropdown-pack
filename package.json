@@ -1,7 +1,6 @@
 {
   "name": "dropdown-pack",
   "version": "0.1.0",
-  "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -10,12 +9,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GuillaumeSere/dropdown-pack.git"
+    "url": "https://github.com/GuillaumeSere/dropdown-pack.git"
   },
-  "dependencies": {
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "babel-cli": "^6.26.0",
     "create-component-lib": "^0.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set NODE_ENV=production rimraf dist && babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -46,7 +46,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0"
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "dropdown-pack": "^0.1.0"
   }
 }

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../styles/dropdown.css';
+import './dropdown.css';
 
 /**
  * Dropdown
@@ -59,7 +59,7 @@ import '../styles/dropdown.css';
       </select>
     </div>
   );
-}
+};
 
 /**
  * Dropdown PROPTYPES
