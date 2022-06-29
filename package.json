@@ -47,7 +47,6 @@
     ]
   },
   "dependencies": {
-    "babel-preset-env": "^1.7.0",
-    "dropdown-pack": "^0.1.0"
+    "babel-preset-env": "^1.7.0"
   }
 }
